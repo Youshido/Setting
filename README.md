@@ -12,7 +12,7 @@ twig:
 ```
 
 ### Import to admin structure.yml file:
-This config use only in pair [YoushidoAdminBundle](https://github.com/Youshido/AdminBundle)
+This config use only in pair with [YoushidoAdminBundle](https://github.com/Youshido/AdminBundle)
 ``` yaml
 imports:
     #...
@@ -28,5 +28,5 @@ $this->get('ysettings')->getParameter($key, $defaultValue);
 
 ### Use in twig: 
 ``` twig
-<title>{{ defaults.parameter(key) }}</title
+<title>{{ defaults.parameter(key) }}</title>
 ```
