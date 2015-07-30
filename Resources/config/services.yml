@@ -1,0 +1,11 @@
+services:
+    ysettings:
+        class: Youshido\SettingsBundle\Service\ParametersBag
+        arguments: [@service_container]
+twig:
+    debug:            "%kernel.debug%"
+    strict_variables: "%kernel.debug%"
+    globals:
+        context: @context
+        adminContext: "@adminContext"
+        defaults: @hh.default_parameters_bag

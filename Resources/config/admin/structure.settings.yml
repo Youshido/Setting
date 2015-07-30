@@ -1,0 +1,15 @@
+modules:
+  settings:
+    title: Site settings
+    type: dictionary
+    entity: Youshido\SettingsBundle\Entity\SiteSetting
+    icon: fa fa-wrench
+    columns:
+      title:
+        readonly: true
+      value:
+        required: false
+    actions:
+      default:
+        show: [title, value]
+      edit: ~
